@@ -1,136 +1,276 @@
 <html>
-<body>
   <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto');
+  @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+  @import url('https://fonts.googleapis.com/css?family=Muli|PT+Sans');
   body {
     font-family: sans-serif;
-    background-color:rgb(252, 235, 244) ;
     font-size: 14;
     margin-left: 50px;
     margin-right: 50px;
     width: 90%;
     line-height: 1.5;
+    margin-top: 0;
+    margin-left: 0;
+
+  }
+  .interests p, ul{
+    text-align:center;
+    font-size: 16;
+    line-height: 1.5em;
+    font-family: 'Muli', sans-serif;
   }
   .list {
     text-align: left;
   }
   .info {
     font-family:'Roboto', sans-serif;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
+    margin-right: 50px;
+    margin-left: 50px;
     padding: 15px;
-    background-color: rgb(252, 235, 244);
-    border: 10px  dotted white;
-    border-radius: 5px;
-    color: rgb(37, 46, 156);
+    font-size: 18;
+    text-indent: 50px;
   }
-    .heading {
-      font-family: Times;
-      width: 45%;
-      margin: 0 auto;
-      padding: 15px;
-      background-color: rgb(251, 251, 251);
-      border: 1px solid black;
-      border-radius: 5px;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      margin-top: 20px;
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      width: 140px;
+    }
+    .outer {
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
       justify-content: space-around;
+      align-content: stretch;
+      width: 80%;
+      min-height: 300px;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 10px;
     }
-    .heading:hover {
-      background-color:  rgb(174, 123, 198);
+
+    .pictures {
+      padding: 10px 30px;
+      width: 30%;
+      max-height: 300px;
+      margin: 5px;
+    }
+    .header {
+      background-image: url("sky.png");
+      background-position: left;
+      background-size: cover;
+      width: 114%;
+      height: 300px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 11em;
+      padding-bottom: 0;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      justify-content: left;
+
+    }
+    .header h1{
+      margin-left: 10px;
+      padding-top: 2em;
+      margin-bottom: 0;
+      font-size: 32;
+      padding-top: 15em;
+      margin-left: -10em;
+    }
+    h3 {
+      text-align: left;
+      margin-left: 10px;
+      margin-top: -200px;
+      margin-bottom: 125px;
       color: rgb(0, 0, 0);
-      transition: all 0.5s;
-      color: rgb(2, 0, 4);
-      background-color: rgb(199, 185, 249);
     }
-.flag{
-  text-align: center;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    width: 140px;
-  }
-  .outer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: stretch;
-  width: 80%;
-  min-height: 300px;
+    h4 {
+      text-align: left;
+      margin-left: 10px;
+      margin-top: -100px;
+      margin-bottom: 200px;
+      color: rgb(0, 0, 0);
+    }
+    h2 {
+      text-align: center;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 24;
+      margin-bottom: -20px;
+      margin-left: 35px;
+    }
+    .submission {
+      text-align: left;
+      margin-left: 45px;
+    }
+    .submission ul{
+      text-align: left;
+    }
+#buttons {
   margin: 0 auto;
-  margin-top: 40px;
-  padding: 10px;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  font-family: 'PT Sans', sans-serif;;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+#buttons a:hover{
+  background-color:  rgb(174, 123, 198);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+  color: rgb(2, 0, 4);
+  background-color: rgb(199, 185, 249);
 }
 
-.pictures {
-  padding: 10px 30px;
-  width: 30%;
-  max-height: 300px;
-  margin: 5px;
-}
+  #buttons a {
+    font-family: ;
+    width: 35%;
+    margin: 15%;
+    padding: 15px;
+    background-color: rgb(251, 251, 251);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #buttons a:active {
+    transform: translateY(2px);
+  }
+
+  .content-box {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    visibility: hidden;
+    position: absolute;
+  }
+  .inner {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+  }
 
   </style>
-</body>
-  <h1 style="color: rgb(66, 161, 244)"> Angelina Collado</h1>
-
-  <p> TEAK Class 18, Phillips Academy Andover'21, Daughter, Sister, Bookworm </p>
-  <p> You can contact me by email at acollado@teakfellowship.org and visit my <a href="https://github.com/acollado21">github</a>.
+<body>
+  <h1 class="header "style="color: white"> Angelina Collado </h1>
+  <h3> TEAK Class 18, Phillips Academy Andover'21, Daughter, Sister, Bookworm </h3>
+  <h4> You can contact me by email at acollado@teakfellowship.org and visit my <a href="https://github.com/acollado21">github</a>.</h4>
+  <h2> A Bit About Me: </h2>
   <p class="info"> My name is <strong>Angelina Collado</strong> but I go by <strong style="color: rgb(244, 66, 134)">Angie</strong>. I am from Bronx, New York. I went to a Catholic school in Washington Heights.
-    I am part of the <a href="https://teakfellowship.org">TEAK Fellowship</a>. Through TEAK, I applied to <em style="color:rgb(66, 78, 244)"> Phillips Academy Andover</em>. In my sophmore year at Phillips Academy Andover, I will be a Sisterhood coordinator. Sisterhood is an affinity club for underrespresented girls of color on campus.  This will be my fourth time doing a program in the summer. I enjoy learning and pursuing my education which explains why my potential free time is occupied with learning. I am bilingual, being able to speak English and Spanish. I take a French class in Andover because I desire to capture the beauty of Romance languages through my studies and culture. I also enjoy sciences because there is a satisfaction with understanding the modern world and evolving with the studies as well.  </p>
-<p> I also really enjoy the arts including music and books.
-  Books that I enjoy reading include:
-  <ul>
-    <li> <em> A Thousand Splendid Suns </em> </li>
-    <li> <em> Milk and Honey </em> </li>
-    <li> <em> The Bluest Eye </em> </li>
-  </ul>
-  I have a diverse taste of music but I truly enjoy cultural music such as:
-  <ul>
-    <li> <a href="https://www.youtube.com/watch?v=J9Hd6kOYO00">Eres Mia by Romeo Santos</a> </li>
-      <li> <a href="https://www.youtube.com/watch?v=mY7w4vkkVFU">Quien Eres Tu by Frank Reyes</a> </li>
+    I am part of the <a href="https://teakfellowship.org">TEAK Fellowship</a>. Through TEAK, I applied to <em style="color:rgb(66, 78, 244)"> Phillips Academy Andover</em>. This will be my fourth time doing a program in the summer. I enjoy learning and pursuing my education which explains why my potential free time is occupied with learning. I am bilingual, being able to speak English and Spanish. I take a French class in Andover because I desire to capture the beauty of Romance languages through my studies and culture. I also enjoy sciences because there is a satisfaction with understanding the modern world and evolving with the studies as well.  </p>
+<div class="interests">
+  <p> I really enjoy the arts including music and books.
+      Books that I enjoy reading include: </p>
+      <ul style="list-style-type:none">
+        <li> <em> A Thousand Splendid Suns </em> </li>
+        <li> <em> Milk and Honey </em> </li>
+        <li> <em> The Bluest Eye </em> </li>
+      </ul>
+    <p>I also have a diverse taste of music but I truly enjoy cultural music such as:</p>
+      <ul style="list-style-type:none">
+        <li> <a href="https://www.youtube.com/watch?v=J9Hd6kOYO00">Eres Mia by Romeo Santos</a> </li>
+        <li> <a href="https://www.youtube.com/watch?v=mY7w4vkkVFU">Quien Eres Tu by Frank Reyes</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=Zro2juD1uwo">Si Estuvieras Aqui by Los Toros Band </a> </li>
         </ul>
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/255px-Flag_of_the_Dominican_Republic.svg.png" class="center"> </img>
-<p class="flag"> These artists are Dominican like me!! </p>
-
-<p style="color:rgb(24, 30, 161)"> Here you will find many of my computer science assignments. </p>
-<p class="heading"> <strong> Projects </strong>
-  <ul tyle="list-style-type:square">
-    <li> <a href="https://acollado21.github.io/AC_Game/"> App </a></li>
-    <li> <a href="https://ksmithp22.github.io/Fitness/"> Client Work </a> </li>
-  </ul>
     </p>
-    <p class="heading"> <strong> Ethical Reflections </strong>
-      <ul style="list-style-type:square" class="list">
-        <li> <a href="https://acollado21.github.io/AC_Ethical_Reflection1/">Ethical Reflection 1</a></li>
-        <li> <a href="https://acollado21.github.io/EthicalReflection2/"> Ethical Reflection 2</a></li>
-        <li> <a href="https://acollado21.github.io/AC_EthicalReflection3/"> Ethical Reflection 3</a> </li>
-        <li> <a href="https://acollado21.github.io/AC_EthicalReflection4/"> Ethical Reflection 4</a> </li>
-
-      </ul>
-      <p class="heading"> <strong> Other </strong>
-        <ul style="list-style-type:square" >
-          <li> <a href="https://acollado21.github.io/AC_CanvasPage/">Canvas Page</a> </li>
-        </ul>
-
-        <p> <center>Surprise pictures of cute animials!</center> </p>
-        <div class="outer">
-          <div class="pictures">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIW60Gxvk0EmCMD1fhvrLaNd53GlKEAOzLhZCv6Y9kSvbJoy4Gg"> </img>
-          </div>
-          <div class="pictures">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQ5WctsZogK7DJWvVZBlCd-p5UwqtnNmz1wMQSIYtJ2XnElKwiQ"> </img>
-          </div>
-          <div class="pictures">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm2wdR-oW-sjBkrxDq8ZOLEbJY82QzIw7eD9hVNY2726EdRl_S"> </img>
-          </div>
-          <div>
+</div>
+<div class="submission">
+  <p style="color:rgb(24, 30, 161)"> Here you will find many of my computer science assignments. </p>
+  <div id="buttons">
+    <a onclick="showProjects()"> Projects </a>
+    <a onclick="showER()"> Ethical Reflections </a>
+    <a onclick="showOthers()"> Others </a>
+    <a onclick="showSurprise()"> Surprise!! </a>
+  </div>
+  <div class="content-box" id="projects">
+  <div class="inner">
+    <ul style="list-style-type:none">
+      <li> <a href="https://acollado21.github.io/AC_Game/"> App </a></li>
+      <li> <a href="https://ksmithp22.github.io/Fitness/"> Client Work </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content-box" id="er">
+  <div class="inner">
+    <ul style="list-style-type:none" class="list">
+      <li> <a href="https://acollado21.github.io/AC_Ethical_Reflection1/">Ethical Reflection 1</a></li>
+      <li> <a href="https://acollado21.github.io/EthicalReflection2/"> Ethical Reflection 2</a></li>
+      <li> <a href="https://acollado21.github.io/AC_EthicalReflection3/"> Ethical Reflection 3</a> </li>
+      <li> <a href="https://acollado21.github.io/AC_EthicalReflection4/"> Ethical Reflection 4</a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content-box" id="others">
+  <div class="inner">
+    <ul style="list-style-type:none">
+      <li> <a href="https://acollado21.github.io/AC_CanvasPage/">Canvas Page</a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content-box" id="surprise">
+  <div class="inner">
+    <div class="content-box" id="surprise">
+      <div class="outer">
+        <div class="pictures">
+          <img src="puppies.jpg"/>
+        </div>
+        <div class="pictures">
+          <img src="kittens.jpg"/>
+        </div>
+        <div class="pictures">
+          <img src="bunnies.jpg"/>
+        </div>
+      <div>
+  </div>
+</div>
+</div>
 </body>
 </html>
+<script>
+
+var projects = document.getElementById("projects");
+var er = document.getElementById("er");
+var others = document.getElementById("others");
+var surprise = document.getElementById("surprise");
+
+function showProjects() {
+  projects.style.visibility = "visible";
+  er.style.visibility = "hidden";
+  others.style.visibility = "hidden";
+  surprise.style.visibility = "hidden";
+}
+
+function showER() {
+  er.style.visibility = "visible";
+  projects.style.visibility = "hidden";
+  others.style.visibility = "hidden";
+  surprise.style.visibility = "hidden";
+}
+
+function showOthers() {
+  others.style.visibility = "visible";
+  er.style.visibility = "hidden";
+  projects.style.visibility = "hidden";
+  surprise.style.visibility = "hidden";
+}
+
+function showSurprise() {
+  surprise.style.visibility = "visible";
+  er.style.visibility = "hidden";
+  others.style.visibility = "hidden";
+  projects.style.visibility = "hidden";
+}
+</script>
