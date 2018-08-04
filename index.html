@@ -40,24 +40,23 @@
       width: 50%;
       width: 140px;
     }
-    .outer {
+
+
+    .pictures {
+      padding: 10px 30px;
+      width: 30%;
+      /*max-height: 500px;*/
+      margin: 5px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-around;
       align-content: stretch;
-      width: 80%;
-      min-height: 300px;
+      /*width: 80%;*/
+    /*  min-height: 300px;*/
       margin: 0 auto;
       margin-top: 40px;
       padding: 10px;
-    }
-
-    .pictures {
-      padding: 10px 30px;
-      width: 30%;
-      max-height: 300px;
-      margin: 5px;
     }
     .header {
       background-image: url("sky.png");
@@ -162,6 +161,9 @@
     height: 100%;
     margin: 0 auto;
   }
+  #surprise .pictures {
+    height: 300px;
+  }
 
   </style>
 <body>
@@ -222,16 +224,11 @@
 </div>
 <div class="content-box" id="surprise">
   <div class="inner">
-    <div class="content-box" id="surprise">
-      <div class="outer">
-        <div class="pictures">
+        <div class="pictures" id="puppies">
           <img src="puppies.jpg"/>
         </div>
-        <div class="pictures">
+        <div class="pictures" id="kittens">
           <img src="kittens.jpg"/>
-        </div>
-        <div class="pictures">
-          <img src="bunnies.jpg"/>
         </div>
       <div>
   </div>
